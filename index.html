@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Lane Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2; 
+    }
+    .cover {
+      background-image: url('img.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px; 
+    }
+
+    .cover h1 {
+      font-size: 60px;
+      font-weight: bold;
+      color: #333333; 
+      margin-bottom: 30px;
+    }
+
+    .cover-subtitle {
+      font-size: 24px;
+      color: #666666;
+      margin-bottom: 30px;
+    }
+
+    .cover-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cover-buttons button {
+      padding: 15px 30px;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: maroon; 
+      color: #ffffff; 
+      border: 2px solid transparent; 
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .cover-buttons button:hover {
+      background-color: #f2f2f2; 
+      color: maroon; 
+      border-color: maroon; 
+      transform: scale(1.1);
+    }
+
+    .cover-buttons button a {
+      color: inherit; 
+      text-decoration: none; 
+    }
+
+    .cover-buttons button:hover a {
+      color: maroon;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <h1>Memory Lane Explorer</h1>
+    <p class="cover-subtitle">Journey through your memories</p>
+    <div class="cover-buttons">
+      <button id="login-button"><a href="login.html">Login</a></button>
+      <button id="signup-button"><a href="signup.html">Sign Up</a></button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

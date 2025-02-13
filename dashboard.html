@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Memory Lane Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ffffff; 
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #dashboardHeading {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333333; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+            margin-bottom: 10px;
+        }
+
+        #dashboardSubheading {
+            font-size: 20px;
+            color: #555; 
+        }
+
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #searchInput {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 300px;
+            margin-right: 10px;
+        }
+
+        #searchInput::placeholder {
+            color: #ccc; 
+        }
+
+        #searchButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #b12952; 
+            color: #fff; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #searchButton:hover {
+            background-color: #800040; 
+        }
+
+        #searchResults {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .result {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff; 
+        }
+
+        .result-content {
+            font-size: 16px;
+            color: #ccc; 
+        }
+
+        .no-results {
+            font-size: 18px;
+            font-style: italic;
+            color: #555;
+        }
+        .result img {
+            width: 50%; 
+            height: auto; 
+            margin: 5px 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="dashboardHeading">Welcome to Your Dashboard</h1>
+            <p id="dashboardSubheading">Explore your memories and experiences</p>
+        </header>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search your favorite memory...">
+            <button id="searchButton" onclick="search()">Search</button>
+        </div>
+        <div id="searchResults">
+        </div>
+    </div>
+    <script src="dashboard.js"></script> 
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Memory Lane Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+        background-image: url('img.jpeg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+      }
+      .center-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .login-form {
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+  
+      .login-form h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+  
+      .input-container {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+  
+      .input-container label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: #fff; 
+      }
+      .input-container input {
+        width: 93%; 
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #f2f2f2; 
+        color: #333; 
+      }
+      button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+        background-color: #b12952; 
+        color: #fff; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      button[type="submit"]:hover {
+        background-color: #800040;
+      }
+      .links-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .links-container a {
+        color: #fff; 
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+  
+      .links-container a:hover {
+        color: #ccc; 
+      }
+      .decorative-text {
+        font-size: 14px;
+        color: #aaa;
+        margin-top: 20px;
+      }  
+  </style>
+</head>
+<body>
+  <div class="center-content">
+    <div class="login-form">
+      <h1>Welcome to Memory Lane Explorer</h1>
+      <p>Sign in to explore your memories</p>
+      <form action="#" method="POST" id="login-form">
+        <div class="input-container">
+          <label for="userId">User ID:</label>
+          <input type="text" id="userId" name="userId" required>
+        </div>
+        <div class="input-container">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <p class="decorative-text">Don't have an account? <a href="signup.html" style="color: white;">Sign up for free</a>.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
